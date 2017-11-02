@@ -1,0 +1,39 @@
+﻿@model Week44Exercises.Models.DataModel
+@{
+    ViewData["Title"] = "Input";
+}
+
+<h2>Input</h2>
+
+<fieldset>
+
+    @using (Html.BeginForm())
+    {
+
+        <p>
+            @Html.LabelFor(x => x.FName)
+            @Html.EditorFor(x => x.FName)
+        </p>
+        <p>
+            @Html.LabelFor(x => x.LName)
+            @Html.EditorFor(x => x.LName)
+        </p>
+        <p>
+            @Html.LabelFor(x => x.DOB)
+            @Html.EditorFor(x => x.DOB)
+        </p>
+        <p>
+            @Html.LabelFor(x => x.Email)
+            @Html.EditorFor(x => x.Email)
+        </p>
+        <p>
+            @Html.LabelFor(x => x.PNumber)
+            @Html.EditorFor(x => x.PNumber)
+        </p>
+        <p>
+            <button type="submit">Submit</button>
+        </p>
+
+    }
+
+</fieldset>

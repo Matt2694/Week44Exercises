@@ -1,0 +1,13 @@
+﻿@model Week44Exercises.Models.DataModel
+@{
+    ViewData["Title"] = "Output";
+}
+<h2>Output</h2>
+@{ 
+    DataModel data = (DataModel)ViewData["data"];
+}
+<strong id="fname">First Name:</strong> <p id="fnametext">@data.FName</p> <br />
+<strong id="lname">Last Name:</strong> <p id="lnametext">@data.LName</p> <br />
+<strong id="dob">Date of Birth:</strong> <p id="dobtext">@data.DOB</p> <br />
+<strong id="email">Email:</strong> <p id="emailtext">@data.Email</p> <br />
+<strong id="pnumber">Phone Number:</strong> <p id="pnumbertext">@data.PNumber</p> <br />
